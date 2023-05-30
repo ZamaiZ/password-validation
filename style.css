@@ -1,0 +1,133 @@
+/* RESET */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style-type: none;
+}
+
+/* BODY STYLES */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    background: #11131E;
+}
+
+.holder {
+    max-width: 450px;
+    overflow: hidden;
+    padding: 25px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.holder .input-field {
+    height: 65px;
+    width: 100%;
+    position: relative;
+}
+
+.input-field input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 17px;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    border: 1px solid #999;
+    transition: .3s ease-in-out;
+}
+
+.input-field input:focus {
+    padding: 0 16px;
+    border: 2px solid #4285F4;
+}
+
+.input-field i {
+    right: 18px;
+    top: 50%;
+    font-size: 1.2rem;
+    color: #999;
+    cursor: pointer;
+    position: absolute;
+    transform: translateY(-50%);
+    transition: .3s ease-in-out;
+}
+
+.holder .contents {
+    margin: 20px 0 10px;
+}
+
+.contents p {
+    color: #333;
+    font-size: 1.3rem;
+    transition: .3s ease-in-out;
+}
+
+.contents .requirements {
+    margin-top: 20px;
+}
+
+.requirements li {
+    font-size: 1.3rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    transition: .3s ease-in-out;
+}
+
+.requirements li i {
+    width: 20px;
+    color: #aaa;
+    font-size: 0.6rem;
+    transition: .3s ease-in-out;
+}
+
+/* WHEN THE REQUIREMENT IS VALID */
+.requirements li.valid i {
+    font-size: 1.2rem;
+    color: #4285F4;
+}
+
+.requirements li span {
+    margin-left: 12px;
+    color: #333;
+    transition: .3s ease-in-out;
+}
+
+/* WHEN THE REQUIREMENT IS VALID */
+.requirements li.valid span {
+    color: #999;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 500px) {
+    body, .holder {
+        padding: 15px;
+    }
+
+    .holder .input-field {
+        height: 55px;
+    }
+
+    .input-field input,
+    .contents p {
+        font-size: 1.15rem;
+    }
+
+    .input-field i,
+    .requirements li {
+        font-size: 1.1rem;
+    }
+
+    .requirements li span {
+        margin-left: 7px;
+    }
+}
