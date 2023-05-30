@@ -18,7 +18,7 @@ body {
     background: #11131E;
 }
 
-.holder {
+.container {
     max-width: 450px;
     overflow: hidden;
     padding: 25px;
@@ -27,7 +27,7 @@ body {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
 }
 
-.holder .input-field {
+.container .input-field {
     height: 65px;
     width: 100%;
     position: relative;
@@ -60,7 +60,7 @@ body {
     transition: .3s ease-in-out;
 }
 
-.holder .contents {
+.container .contents {
     margin: 20px 0 10px;
 }
 
@@ -109,11 +109,11 @@ body {
 
 /* RESPONSIVE */
 @media screen and (max-width: 500px) {
-    body, .holder {
+    body, .container {
         padding: 15px;
     }
 
-    .holder .input-field {
+    .container .input-field {
         height: 55px;
     }
 
